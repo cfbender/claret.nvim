@@ -5,7 +5,12 @@ Warm Neovim colorscheme with burgundy, gold, sage palette inspired by french cui
 ## Variants
 
 - `claret` — dark
+  
+  ![claret dark screenshot](./screenshot.png)
+
 - `claret-light` — light
+
+  ![claret light screenshot](./screenshot_light.png)
 
 ## Install
 
