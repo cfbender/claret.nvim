@@ -2,7 +2,9 @@ local M = {}
 
 function M.assert_eq(actual, expected, label)
   if actual ~= expected then
-    error(string.format('%s: expected %s, got %s', label, vim.inspect(expected), vim.inspect(actual)))
+    error(
+      string.format('%s: expected %s, got %s', label, vim.inspect(expected), vim.inspect(actual))
+    )
   end
 end
 
