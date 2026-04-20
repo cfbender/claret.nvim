@@ -1,0 +1,1 @@
+require('claret').load('dark')
