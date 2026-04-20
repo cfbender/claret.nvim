@@ -21,7 +21,7 @@ nvim --headless -u tests/minimal_init.lua -c "lua dofile('scripts/generate_ports
 
 git add \
   ports/ghostty/claret-dark.conf \
-  ports/opencode/claret-dark.json \
+  ports/opencode/claret.json \
   ports/yazi/claret-dark.toml \
   ports/bat/ClaretDark.tmTheme \
   ports/zellij/claret-dark.kdl
