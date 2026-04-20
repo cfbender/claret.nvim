@@ -1,0 +1,6 @@
+[tools]
+lefthook = "latest"
+
+[tasks.hooks-install]
+description = "Install git hooks via lefthook"
+run = "lefthook install"

@@ -1,0 +1,4 @@
+pre-commit:
+  commands:
+    generate-ports:
+      run: ./scripts/precommit_ports.sh
