@@ -1,0 +1,21 @@
+{
+  "$schema": "https://opencode.ai/theme.schema.json",
+  "name": "claret-dark",
+  "type": "dark",
+  "colors": {
+    "background": "#180E10",
+    "background_soft": "#211618",
+    "background_mute": "#2B1F22",
+    "divider": "#3A2E25",
+    "foreground": "#DDD3C7",
+    "foreground_muted": "#9E9288",
+    "keyword": "#C75B7A",
+    "function": "#D4A76A",
+    "string": "#8FA86E",
+    "type": "#8995A8",
+    "error": "#C44536",
+    "warning": "#C5975B",
+    "info": "#8995A8",
+    "hint": "#7A9460"
+  }
+}

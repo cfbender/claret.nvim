@@ -1,6 +1,6 @@
 # claret.nvim
 
-Warm Neovim colorscheme with burgundy, gold, sage palette inspired by mise docs theme.
+Warm Neovim colorscheme with burgundy, gold, sage palette inspired by french cuisine.
 
 ## Variants
 

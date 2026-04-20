@@ -1,0 +1,72 @@
+[manager]
+cwd = { fg = "#D4A76A" }
+hovered = { fg = "#DDD3C7", bg = "#2B1F22" }
+preview_hovered = { fg = "#DDD3C7", bg = "#2B1F22" }
+find_keyword = { fg = "#180E10", bg = "#D4A76A", bold = true }
+find_position = { fg = "#8995A8", bold = true }
+marker_copied = { fg = "#8FA86E", bg = "#8FA86E" }
+marker_cut = { fg = "#C44536", bg = "#C44536" }
+marker_marked = { fg = "#C75B7A", bg = "#C75B7A" }
+count_copied = { fg = "#180E10", bg = "#8FA86E" }
+count_cut = { fg = "#180E10", bg = "#C44536" }
+count_selected = { fg = "#180E10", bg = "#C75B7A" }
+
+[status]
+separator_open = ""
+separator_close = ""
+separator_style = { fg = "#3A2E25", bg = "#180E10" }
+mode_normal = { fg = "#180E10", bg = "#D4A76A", bold = true }
+mode_select = { fg = "#180E10", bg = "#C75B7A", bold = true }
+mode_unset = { fg = "#180E10", bg = "#8995A8", bold = true }
+progress_label = { fg = "#DDD3C7", bold = true }
+progress_normal = { fg = "#D4A76A", bg = "#211618" }
+progress_error = { fg = "#C44536", bg = "#211618" }
+
+[input]
+border = { fg = "#C75B7A" }
+title = { fg = "#DDD3C7" }
+value = { fg = "#DDD3C7" }
+selected = { fg = "#180E10", bg = "#D4A76A" }
+
+[select]
+border = { fg = "#C75B7A" }
+active = { fg = "#D4A76A" }
+inactive = { fg = "#9E9288" }
+
+[tasks]
+border = { fg = "#C75B7A" }
+title = { fg = "#DDD3C7" }
+hovered = { fg = "#DDD3C7", bg = "#2B1F22" }
+
+[which]
+cols = 3
+mask = { bg = "#211618" }
+cand = { fg = "#8995A8" }
+rest = { fg = "#9E9288" }
+desc = { fg = "#D4A76A" }
+separator = "  "
+separator_style = { fg = "#3A2E25" }
+
+[help]
+on = { fg = "#8FA86E" }
+run = { fg = "#C75B7A" }
+hovered = { bg = "#2B1F22" }
+footer = { fg = "#DDD3C7", bg = "#211618" }
+
+[notify]
+title_info = { fg = "#8995A8" }
+title_warn = { fg = "#D4A76A" }
+title_error = { fg = "#C44536" }
+
+[filetype]
+rules = [
+  { mime = "image/*", fg = "#C75B7A" },
+  { mime = "video/*", fg = "#B04A68" },
+  { mime = "audio/*", fg = "#8FA86E" },
+  { mime = "application/zip", fg = "#C5975B" },
+  { mime = "application/gzip", fg = "#C5975B" },
+  { mime = "application/x-tar", fg = "#C5975B" },
+  { mime = "application/json", fg = "#8995A8" },
+  { mime = "application/toml", fg = "#8995A8" },
+  { name = "*/", fg = "#D4A76A" }
+]
