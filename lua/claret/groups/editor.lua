@@ -13,6 +13,8 @@ function M.get(colors, config)
     FloatBorder = { fg = colors.rose_3, bg = colors.bg_soft },
     StatusLine = { fg = colors.text_2, bg = colors.bg_mute },
     StatusLineNC = { fg = colors.text_4, bg = colors.bg_soft },
+    WinBar = { fg = colors.text_3, bg = colors.bg_soft },
+    WinBarNC = { fg = colors.text_4, bg = colors.bg_soft },
     WinSeparator = { fg = colors.divider },
     CursorLine = { bg = colors.bg_mute },
     CursorLineNr = { fg = colors.gold_1, bold = true },
