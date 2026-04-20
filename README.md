@@ -16,7 +16,7 @@ Warm Neovim colorscheme with burgundy, gold, sage palette inspired by french cui
 
 ```lua
 {
-  'yourname/claret.nvim',
+  'cfbender/claret.nvim',
   priority = 1000,
   config = function()
     require('claret').setup({
