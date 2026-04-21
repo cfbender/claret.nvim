@@ -313,8 +313,8 @@ local bat_scopes = {
   { 'Parameter', 'variable.parameter', p.text, 'italic' },
   { 'Property', 'variable.other.property, variable.other.member', p.rose_2 },
   {
-    'JSON Key',
-    'support.type.property-name, meta.object-literal.key, string.json meta.structure.dictionary.key.json',
+    'JSON/YAML/TOML Keys',
+    'meta.mapping.key string, support.type.property-name.json, punctuation.support.type.property-name.json, support.type.property-name.toml, punctuation.support.type.property-name.toml, entity.name.tag.yaml, support.type.property-name.yaml',
     p.rose_2,
   },
   { 'Operator', 'keyword.operator', p.text_3 },
