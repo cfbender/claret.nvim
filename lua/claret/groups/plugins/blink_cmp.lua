@@ -8,7 +8,7 @@ function M.get(colors, _)
     BlinkCmpLabelMatch = { fg = colors.rose_1, bold = true },
     BlinkCmpKindFunction = { fg = colors.gold_1 },
     BlinkCmpKindMethod = { fg = colors.gold_2 },
-    BlinkCmpKindClass = { fg = colors.type_1 },
+    BlinkCmpKindClass = { fg = colors.slate_1 },
     BlinkCmpKindVariable = { fg = colors.text },
   }
 end

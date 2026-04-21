@@ -3,7 +3,7 @@ local M = {}
 function M.get(colors, config)
   return {
     Comment = { fg = colors.text_4, italic = config.italics.comments },
-    Constant = { fg = colors.type_1 },
+    Constant = { fg = colors.slate_1 },
     String = { fg = colors.sage_1 },
     Character = { fg = colors.sage_1 },
     Number = { fg = colors.gold_1 },
@@ -19,8 +19,8 @@ function M.get(colors, config)
     Keyword = { fg = colors.rose_1, italic = config.italics.keywords },
     Exception = { fg = colors.rose_1, italic = config.italics.keywords },
     PreProc = { fg = colors.gold_1 },
-    Type = { fg = colors.type_1 },
-    Special = { fg = colors.type_1 },
+    Type = { fg = colors.slate_1 },
+    Special = { fg = colors.slate_1 },
     Underlined = { underline = true },
   }
 end

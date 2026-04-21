@@ -145,7 +145,7 @@ The pre-commit hook regenerates port files automatically when `lua/claret/palett
 
 1. Add a new file under `lua/claret/groups/plugins/` that returns `{ get = function(colors, opts) ... end }`.
 2. Register it in `lua/claret/theme.lua`.
-3. Reuse semantic palette roles (`rose_*` for keywords, `gold_*` for functions, `sage_*` for strings, `type_1` for types, `terra_*` for errors) — don't invent new hues.
+3. Reuse semantic palette roles (`rose_*` for keywords, `gold_*` for functions, `sage_*` for strings, `slate_*` for types/tags, `terra_*` for errors) — don't invent new hues.
 4. Add an assertion to `tests/plugins_spec.lua` covering one representative group.
 
 ### Changing the palette

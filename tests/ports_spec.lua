@@ -17,7 +17,7 @@ assert_contains('ports/ghostty/claret-dark.conf', "foreground = " .. palette.tex
 assert_contains('ports/ghostty/claret-dark.conf', "palette = 1=" .. palette.terra_1, 'ghostty ansi red')
 
 assert_contains('ports/opencode/claret.json', '"dBg": "' .. palette.bg .. '"', 'opencode bg def')
-assert_contains('ports/opencode/claret.json', '"dRose1": "' .. palette.rose_1 .. '"', 'opencode rose def')
+assert_contains('ports/opencode/claret.json', '"dSlate1": "' .. palette.slate_1 .. '"', 'opencode slate def')
 assert_contains('ports/opencode/claret.json', '"dTerra1": "' .. palette.terra_1 .. '"', 'opencode terra def')
 
 assert_contains('ports/yazi/claret-dark.toml', 'bg = "' .. palette.bg .. '"', 'yazi background')
