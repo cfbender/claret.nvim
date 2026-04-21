@@ -24,4 +24,6 @@ git add \
   ports/opencode/claret.json \
   ports/yazi/claret-dark.toml \
   ports/bat/ClaretDark.tmTheme \
-  ports/zellij/claret-dark.kdl
+  ports/zellij/claret-dark.kdl \
+  ports/kitty/claret.conf \
+  ports/starship/claret.toml

@@ -28,8 +28,38 @@ assert_contains('ports/bat/ClaretDark.tmTheme', '<string>' .. palette.bg .. '</s
 assert_contains('ports/bat/ClaretDark.tmTheme', '<string>' .. palette.rose_1 .. '</string>', 'bat keyword')
 assert_contains('ports/bat/ClaretDark.tmTheme', '<string>' .. palette.terra_1 .. '</string>', 'bat invalid')
 
-assert_contains('ports/zellij/claret-dark.kdl', 'bg "' .. palette.bg .. '"', 'zellij background')
-assert_contains('ports/zellij/claret-dark.kdl', 'fg "' .. palette.text .. '"', 'zellij foreground')
-assert_contains('ports/zellij/claret-dark.kdl', 'red "' .. palette.terra_1 .. '"', 'zellij red')
+local function hex_rgb(hex)
+  local r = tonumber(hex:sub(2, 3), 16)
+  local g = tonumber(hex:sub(4, 5), 16)
+  local b = tonumber(hex:sub(6, 7), 16)
+  return string.format('%d %d %d', r, g, b)
+end
+
+-- Zellij now uses the UI-component spec so frames can be coloured
+-- independently of the ANSI green slot. Frames are gold on focus.
+assert_contains('ports/zellij/claret-dark.kdl', 'frame_selected {', 'zellij frame_selected block')
+assert_contains(
+  'ports/zellij/claret-dark.kdl',
+  'base ' .. hex_rgb(palette.gold_1),
+  'zellij frame gold base'
+)
+assert_contains(
+  'ports/zellij/claret-dark.kdl',
+  'exit_code_error {',
+  'zellij exit_code_error block'
+)
+assert_contains(
+  'ports/zellij/claret-dark.kdl',
+  'base ' .. hex_rgb(palette.terra_1),
+  'zellij terra base'
+)
+
+assert_contains('ports/kitty/claret.conf', 'background              ' .. palette.bg, 'kitty background')
+assert_contains('ports/kitty/claret.conf', 'foreground              ' .. palette.text, 'kitty foreground')
+assert_contains('ports/kitty/claret.conf', 'color1 ' .. palette.terra_1, 'kitty ansi red')
+
+assert_contains('ports/starship/claret.toml', 'red     = "' .. palette.terra_1 .. '"', 'starship red')
+assert_contains('ports/starship/claret.toml', 'yellow  = "' .. palette.gold_1 .. '"', 'starship yellow')
+assert_contains('ports/starship/claret.toml', 'overlay = "' .. palette.bg .. '"', 'starship overlay')
 
 print('ports ok')
