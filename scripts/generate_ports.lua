@@ -312,6 +312,11 @@ local bat_scopes = {
   { 'Variable', 'variable, variable.parameter', p.text },
   { 'Parameter', 'variable.parameter', p.text, 'italic' },
   { 'Property', 'variable.other.property, variable.other.member', p.rose_2 },
+  {
+    'JSON Key',
+    'support.type.property-name, meta.object-literal.key, string.json meta.structure.dictionary.key.json',
+    p.rose_2,
+  },
   { 'Operator', 'keyword.operator', p.text_3 },
   { 'Punctuation', 'punctuation', p.text_3 },
   { 'Decorator', 'meta.decorator, punctuation.decorator', p.gold_1, 'italic' },
