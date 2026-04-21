@@ -20,9 +20,10 @@ assert_contains('ports/opencode/claret.json', '"dBg": "' .. palette.bg .. '"', '
 assert_contains('ports/opencode/claret.json', '"dSlate1": "' .. palette.slate_1 .. '"', 'opencode slate def')
 assert_contains('ports/opencode/claret.json', '"dTerra1": "' .. palette.terra_1 .. '"', 'opencode terra def')
 
-assert_contains('ports/yazi/claret-dark.toml', 'bg = "' .. palette.bg .. '"', 'yazi background')
-assert_contains('ports/yazi/claret-dark.toml', 'fg = "' .. palette.gold_1 .. '"', 'yazi accent')
-assert_contains('ports/yazi/claret-dark.toml', 'fg = "' .. palette.terra_1 .. '"', 'yazi error')
+assert_contains('ports/yazi/claret-dark.yazi/flavor.toml', 'bg = "' .. palette.bg .. '"', 'yazi background')
+assert_contains('ports/yazi/claret-dark.yazi/flavor.toml', 'fg = "' .. palette.gold_1 .. '"', 'yazi accent')
+assert_contains('ports/yazi/claret-dark.yazi/flavor.toml', 'fg = "' .. palette.terra_1 .. '"', 'yazi error')
+assert_contains('ports/yazi/claret-dark.yazi/tmtheme.xml', '<string>' .. palette.bg .. '</string>', 'yazi tmtheme bundled')
 
 assert_contains('ports/bat/ClaretDark.tmTheme', '<string>' .. palette.bg .. '</string>', 'bat background')
 assert_contains('ports/bat/ClaretDark.tmTheme', '<string>' .. palette.rose_1 .. '</string>', 'bat keyword')
