@@ -1,16 +1,26 @@
 # claret.nvim
 
-Warm Neovim colorscheme with burgundy, gold, and sage — inspired by french cuisine.
+Warm Neovim colorscheme with burgundy, gold, and sage — inspired by French cuisine. 🍷
+
+<p align="center">
+  <img src="./claret.png" alt="claret.nvim" />
+</p>
 
 ## Variants
 
-- `claret` — dark
+<details>
+<summary><code>claret</code> — dark</summary>
 
-  ![claret dark screenshot](./screenshot.png)
+![claret dark screenshot](./screenshot.png)
 
-- `claret-light` — light
+</details>
 
-  ![claret light screenshot](./screenshot_light.png)
+<details>
+<summary><code>claret-light</code> — light</summary>
+
+![claret light screenshot](./screenshot_light.png)
+
+</details>
 
 ## Install
 
