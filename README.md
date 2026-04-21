@@ -105,8 +105,11 @@ Matching themes for other tools live under [`ports/`](./ports). They are auto-ge
 | --- | --- | --- |
 | [bat](https://github.com/sharkdp/bat) | [`ports/bat/ClaretDark.tmTheme`](./ports/bat/ClaretDark.tmTheme) | Copy into `"$(bat --config-dir)/themes/"`, then `bat cache --build`. Use with `--theme=ClaretDark` or set `--theme="ClaretDark"` in `bat.conf`. |
 | [ghostty](https://ghostty.org) | [`ports/ghostty/claret-dark.conf`](./ports/ghostty/claret-dark.conf) | Copy to `~/.config/ghostty/themes/claret-dark`, then add `theme = claret-dark` to `~/.config/ghostty/config`. |
+| [kitty](https://sw.kovidgoyal.net/kitty/) | [`ports/kitty/claret.conf`](./ports/kitty/claret.conf) | `include` or copy into `~/.config/kitty/kitty.conf`. |
 | [opencode](https://opencode.ai) | [`ports/opencode/claret.json`](./ports/opencode/claret.json) | Copy to `~/.config/opencode/themes/claret.json`, then set `"theme": "claret"` in `opencode.json`. |
-| [yazi](https://yazi-rs.github.io) | [`ports/yazi/claret-dark.toml`](./ports/yazi/claret-dark.toml) | Copy to `~/.config/yazi/theme.toml` (or merge into your existing `theme.toml`). |
+| [starship](https://starship.rs) | [`ports/starship/claret.toml`](./ports/starship/claret.toml) | Merge `[palettes.claret]` into `~/.config/starship.toml` and set `palette = "claret"`. |
+| [vicinae](https://github.com/vicinaehq/vicinae) | [`ports/vicinae/claret-dark.toml`](./ports/vicinae/claret-dark.toml) | Copy to `~/.local/share/vicinae/themes/claret-dark.toml`. |
+| [yazi](https://yazi-rs.github.io) | [`ports/yazi/claret-dark.yazi/`](./ports/yazi/claret-dark.yazi/) | Copy `claret-dark.yazi/` to `~/.config/yazi/flavors/`, then set `dark = "claret-dark"` under `[flavor]` in `~/.config/yazi/theme.toml`. |
 | [zellij](https://zellij.dev) | [`ports/zellij/claret-dark.kdl`](./ports/zellij/claret-dark.kdl) | Copy to `~/.config/zellij/themes/claret-dark.kdl`, then set `theme "claret-dark"` in your zellij config. |
 
 On macOS, replace `~/.config` with `$XDG_CONFIG_HOME` if you set it, or use the tool's documented config directory.

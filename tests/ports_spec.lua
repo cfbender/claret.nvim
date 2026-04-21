@@ -127,4 +127,20 @@ assert_contains(
   'starship overlay'
 )
 
+assert_contains(
+  'ports/vicinae/claret-dark.toml',
+  'background = "' .. palette.bg .. '"',
+  'vicinae background'
+)
+assert_contains(
+  'ports/vicinae/claret-dark.toml',
+  'accent = "' .. palette.slate_1 .. '"',
+  'vicinae accent'
+)
+assert_contains(
+  'ports/vicinae/claret-dark.toml',
+  'danger = "' .. palette.terra_1 .. '"',
+  'vicinae danger'
+)
+
 print('ports ok')

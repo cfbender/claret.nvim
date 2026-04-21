@@ -27,4 +27,5 @@ git add \
   ports/bat/ClaretDark.tmTheme \
   ports/zellij/claret-dark.kdl \
   ports/kitty/claret.conf \
-  ports/starship/claret.toml
+  ports/starship/claret.toml \
+  ports/vicinae/claret-dark.toml
