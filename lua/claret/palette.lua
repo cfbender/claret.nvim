@@ -1,6 +1,6 @@
 return {
   dark = {
-    bg = '#180E10',
+    bg = '#180810',
     bg_soft = '#211618',
     bg_mute = '#2B1F22',
     divider = '#3A2E25',

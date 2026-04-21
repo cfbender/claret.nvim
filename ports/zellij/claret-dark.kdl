@@ -2,7 +2,7 @@
 themes {
   claret-dark {
     fg "#DDD3C7"
-    bg "#180E10"
+    bg "#180810"
     black "#211618"
     red "#C44536"
     green "#8FA86E"

@@ -6,7 +6,7 @@ Neovim colorscheme with locked Claret palette and structural syntax mapping.
 
 ## Core decisions
 
-- Dark bg `#180E10`, text `#DDD3C7`, type accent `#8995A8`
+- Dark bg `#180810`, text `#DDD3C7`, type accent `#8995A8`
 - Light bg `#FDF8F3`, text `#2A1F1A`, walnut `#7D5B38`, moss `#5A6B40`, type accent `#4A5670`
 - Keywords = rose/burgundy, functions = gold, strings = sage, types = slate, errors = terra
 - Keep errors red-family; types are not red-family

@@ -3,7 +3,7 @@ local helpers = require('tests.helpers')
 local palette = require('claret.palette')
 local config = require('claret.config')
 
-helpers.assert_eq(palette.dark.bg, '#180E10', 'dark bg')
+helpers.assert_eq(palette.dark.bg, '#180810', 'dark bg')
 helpers.assert_eq(palette.dark.type_1, '#8995A8', 'dark type accent')
 helpers.assert_eq(palette.light.bg, '#FDF8F3', 'light bg')
 helpers.assert_eq(palette.light.gold_1, '#7D5B38', 'light walnut gold')

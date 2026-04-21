@@ -7,7 +7,7 @@ claret.load()
 helpers.assert_eq(vim.g.colors_name, 'claret', 'auto picks dark')
 
 local end_of_buffer = helpers.get_hl('EndOfBuffer')
-helpers.assert_eq(string.format('#%06X', end_of_buffer.bg), '#180E10', 'opaque EndOfBuffer bg')
+helpers.assert_eq(string.format('#%06X', end_of_buffer.bg), '#180810', 'opaque EndOfBuffer bg')
 
 vim.o.background = 'light'
 claret.load()

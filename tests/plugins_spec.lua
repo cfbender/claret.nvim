@@ -8,7 +8,7 @@ local cases = {
   { 'BlinkCmpMenu', '#211618', 'bg' },
   { 'NoiceCmdlinePopupBorder', '#9A3D5A' },
   { 'WhichKey', '#C75B7A' },
-  { 'FlashLabel', '#180E10' },
+  { 'FlashLabel', '#180810' },
   { 'GitSignsAdd', '#8FA86E' },
   { 'TodoFgTODO', '#D4A76A' },
   { 'IblIndent', '#3A2E25' },
@@ -18,7 +18,7 @@ local cases = {
 
 vim.list_extend(cases, {
   { 'HeirlineStatusLine', '#2B1F22', 'bg' },
-  { 'ClaretLualineNormalA', '#180E10' },
+  { 'ClaretLualineNormalA', '#180810' },
   { 'TinyInlineDiagnosticError', '#C44536' },
   { 'ToggleTermBorder', '#9A3D5A' },
   { 'GrappleHandle', '#C75B7A' },
@@ -27,7 +27,7 @@ vim.list_extend(cases, {
   { 'DapBreakpoint', '#C44536' },
   { 'DapUIWatchesValue', '#D4A76A' },
   { 'CopilotSuggestion', '#71685E' },
-  { 'WindowPickerStatusLine', '#180E10' },
+  { 'WindowPickerStatusLine', '#180810' },
 })
 
 for _, case in ipairs(cases) do
