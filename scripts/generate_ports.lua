@@ -81,8 +81,8 @@ generated['ports/opencode/claret.json'] = table.concat({
   '    "dGold2": "' .. p.gold_2 .. '",',
   '    "dSage1": "' .. p.sage_1 .. '",',
   '    "dSage2": "' .. p.sage_2 .. '",',
-   '    "dSlate1": "' .. p.slate_1 .. '",',
-   '    "dSlate2": "' .. p.slate_2 .. '",',
+  '    "dSlate1": "' .. p.slate_1 .. '",',
+  '    "dSlate2": "' .. p.slate_2 .. '",',
   '    "dTerra1": "' .. p.terra_1 .. '",',
   '    "dDiffAddBg": "#1D2418",',
   '    "dDiffRemBg": "#2A1417",',
@@ -99,8 +99,8 @@ generated['ports/opencode/claret.json'] = table.concat({
   '    "lGold2": "' .. pl.gold_2 .. '",',
   '    "lSage1": "' .. pl.sage_1 .. '",',
   '    "lSage2": "' .. pl.sage_2 .. '",',
-   '    "lSlate1": "' .. pl.slate_1 .. '",',
-   '    "lSlate2": "' .. pl.slate_2 .. '",',
+  '    "lSlate1": "' .. pl.slate_1 .. '",',
+  '    "lSlate2": "' .. pl.slate_2 .. '",',
   '    "lTerra1": "' .. pl.terra_1 .. '",',
   '    "lDiffAddBg": "#EAF1E2",',
   '    "lDiffRemBg": "#F5E3E1"',
@@ -232,7 +232,9 @@ generated['ports/yazi/claret-dark.yazi/flavor.toml'] = table.concat({
   '  { mime = "image/*", fg = "' .. p.rose_1 .. '" },',
   '  { mime = "video/*", fg = "' .. p.rose_2 .. '" },',
   '  { mime = "audio/*", fg = "' .. p.sage_1 .. '" },',
-  '  { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "' .. p.gold_2 .. '" },',
+  '  { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "'
+    .. p.gold_2
+    .. '" },',
   '  { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "' .. p.rose_2 .. '" },',
   '  { mime = "application/json", fg = "' .. p.slate_1 .. '" },',
   '  { mime = "application/toml", fg = "' .. p.slate_1 .. '" },',
@@ -385,16 +387,37 @@ local function extend(dst, src)
   end
 end
 
-extend(zl, zl_block('text_unselected', text_rgb, bg_rgb, gold1_rgb, type1_rgb, sage1_rgb, rose1_rgb))
+extend(
+  zl,
+  zl_block('text_unselected', text_rgb, bg_rgb, gold1_rgb, type1_rgb, sage1_rgb, rose1_rgb)
+)
 extend(zl, zl_block('text_selected', text_rgb, bgm_rgb, gold1_rgb, type1_rgb, sage1_rgb, rose1_rgb))
-extend(zl, zl_block('ribbon_selected', bg_rgb, rose1_rgb, gold1_rgb, text_rgb, sage1_rgb, type1_rgb))
-extend(zl, zl_block('ribbon_unselected', bg_rgb, text_rgb, rose1_rgb, type1_rgb, sage1_rgb, gold1_rgb))
+extend(
+  zl,
+  zl_block('ribbon_selected', bg_rgb, rose1_rgb, gold1_rgb, text_rgb, sage1_rgb, type1_rgb)
+)
+extend(
+  zl,
+  zl_block('ribbon_unselected', bg_rgb, text_rgb, rose1_rgb, type1_rgb, sage1_rgb, gold1_rgb)
+)
 extend(zl, zl_block('table_title', gold1_rgb, '0', rose1_rgb, type1_rgb, sage1_rgb, text_rgb))
-extend(zl, zl_block('table_cell_selected', text_rgb, bgm_rgb, gold1_rgb, type1_rgb, sage1_rgb, rose1_rgb))
-extend(zl, zl_block('table_cell_unselected', text_rgb, bg_rgb, gold1_rgb, type1_rgb, sage1_rgb, rose1_rgb))
+extend(
+  zl,
+  zl_block('table_cell_selected', text_rgb, bgm_rgb, gold1_rgb, type1_rgb, sage1_rgb, rose1_rgb)
+)
+extend(
+  zl,
+  zl_block('table_cell_unselected', text_rgb, bg_rgb, gold1_rgb, type1_rgb, sage1_rgb, rose1_rgb)
+)
 extend(zl, zl_block('list_selected', text_rgb, bgm_rgb, gold1_rgb, type1_rgb, sage1_rgb, rose1_rgb))
-extend(zl, zl_block('list_unselected', text_rgb, bg_rgb, gold1_rgb, type1_rgb, sage1_rgb, rose1_rgb))
-extend(zl, zl_block('frame_unselected', divider_rgb, '0', text4_rgb, divider_rgb, divider_rgb, divider_rgb))
+extend(
+  zl,
+  zl_block('list_unselected', text_rgb, bg_rgb, gold1_rgb, type1_rgb, sage1_rgb, rose1_rgb)
+)
+extend(
+  zl,
+  zl_block('frame_unselected', divider_rgb, '0', text4_rgb, divider_rgb, divider_rgb, divider_rgb)
+)
 extend(zl, zl_block('frame_selected', gold1_rgb, '0', gold2_rgb, text_rgb, rose1_rgb, '0'))
 extend(zl, zl_block('frame_highlight', rose1_rgb, '0', gold1_rgb, rose1_rgb, rose1_rgb, rose1_rgb))
 extend(zl, zl_block('exit_code_success', sage1_rgb, '0', type1_rgb, bg_rgb, gold1_rgb, rose1_rgb))

@@ -1,6 +1,15 @@
 [tools]
 lefthook = "latest"
+stylua = "latest"
 
 [tasks.hooks-install]
 description = "Install git hooks via lefthook"
 run = "lefthook install"
+
+[tasks.format]
+description = "Format Lua files with stylua"
+run = "stylua lua/ tests/ colors/ scripts/"
+
+[tasks.check-format]
+description = "Check Lua formatting"
+run = "stylua --check lua/ tests/ colors/ scripts/"

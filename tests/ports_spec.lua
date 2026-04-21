@@ -12,22 +12,70 @@ local function assert_contains(path, needle, label)
   end
 end
 
-assert_contains('ports/ghostty/claret-dark.conf', "background = " .. palette.bg, 'ghostty background')
-assert_contains('ports/ghostty/claret-dark.conf', "foreground = " .. palette.text, 'ghostty foreground')
-assert_contains('ports/ghostty/claret-dark.conf', "palette = 1=" .. palette.terra_1, 'ghostty ansi red')
+assert_contains(
+  'ports/ghostty/claret-dark.conf',
+  'background = ' .. palette.bg,
+  'ghostty background'
+)
+assert_contains(
+  'ports/ghostty/claret-dark.conf',
+  'foreground = ' .. palette.text,
+  'ghostty foreground'
+)
+assert_contains(
+  'ports/ghostty/claret-dark.conf',
+  'palette = 1=' .. palette.terra_1,
+  'ghostty ansi red'
+)
 
 assert_contains('ports/opencode/claret.json', '"dBg": "' .. palette.bg .. '"', 'opencode bg def')
-assert_contains('ports/opencode/claret.json', '"dSlate1": "' .. palette.slate_1 .. '"', 'opencode slate def')
-assert_contains('ports/opencode/claret.json', '"dTerra1": "' .. palette.terra_1 .. '"', 'opencode terra def')
+assert_contains(
+  'ports/opencode/claret.json',
+  '"dSlate1": "' .. palette.slate_1 .. '"',
+  'opencode slate def'
+)
+assert_contains(
+  'ports/opencode/claret.json',
+  '"dTerra1": "' .. palette.terra_1 .. '"',
+  'opencode terra def'
+)
 
-assert_contains('ports/yazi/claret-dark.yazi/flavor.toml', 'bg = "' .. palette.bg .. '"', 'yazi background')
-assert_contains('ports/yazi/claret-dark.yazi/flavor.toml', 'fg = "' .. palette.gold_1 .. '"', 'yazi accent')
-assert_contains('ports/yazi/claret-dark.yazi/flavor.toml', 'fg = "' .. palette.terra_1 .. '"', 'yazi error')
-assert_contains('ports/yazi/claret-dark.yazi/tmtheme.xml', '<string>' .. palette.bg .. '</string>', 'yazi tmtheme bundled')
+assert_contains(
+  'ports/yazi/claret-dark.yazi/flavor.toml',
+  'bg = "' .. palette.bg .. '"',
+  'yazi background'
+)
+assert_contains(
+  'ports/yazi/claret-dark.yazi/flavor.toml',
+  'fg = "' .. palette.gold_1 .. '"',
+  'yazi accent'
+)
+assert_contains(
+  'ports/yazi/claret-dark.yazi/flavor.toml',
+  'fg = "' .. palette.terra_1 .. '"',
+  'yazi error'
+)
+assert_contains(
+  'ports/yazi/claret-dark.yazi/tmtheme.xml',
+  '<string>' .. palette.bg .. '</string>',
+  'yazi tmtheme bundled'
+)
 
-assert_contains('ports/bat/ClaretDark.tmTheme', '<string>' .. palette.bg .. '</string>', 'bat background')
-assert_contains('ports/bat/ClaretDark.tmTheme', '<string>' .. palette.rose_1 .. '</string>', 'bat keyword')
-assert_contains('ports/bat/ClaretDark.tmTheme', '<string>' .. palette.terra_1 .. '</string>', 'bat invalid')
+assert_contains(
+  'ports/bat/ClaretDark.tmTheme',
+  '<string>' .. palette.bg .. '</string>',
+  'bat background'
+)
+assert_contains(
+  'ports/bat/ClaretDark.tmTheme',
+  '<string>' .. palette.rose_1 .. '</string>',
+  'bat keyword'
+)
+assert_contains(
+  'ports/bat/ClaretDark.tmTheme',
+  '<string>' .. palette.terra_1 .. '</string>',
+  'bat invalid'
+)
 
 local function hex_rgb(hex)
   local r = tonumber(hex:sub(2, 3), 16)
@@ -44,23 +92,39 @@ assert_contains(
   'base ' .. hex_rgb(palette.gold_1),
   'zellij frame gold base'
 )
-assert_contains(
-  'ports/zellij/claret-dark.kdl',
-  'exit_code_error {',
-  'zellij exit_code_error block'
-)
+assert_contains('ports/zellij/claret-dark.kdl', 'exit_code_error {', 'zellij exit_code_error block')
 assert_contains(
   'ports/zellij/claret-dark.kdl',
   'base ' .. hex_rgb(palette.terra_1),
   'zellij terra base'
 )
 
-assert_contains('ports/kitty/claret.conf', 'background              ' .. palette.bg, 'kitty background')
-assert_contains('ports/kitty/claret.conf', 'foreground              ' .. palette.text, 'kitty foreground')
+assert_contains(
+  'ports/kitty/claret.conf',
+  'background              ' .. palette.bg,
+  'kitty background'
+)
+assert_contains(
+  'ports/kitty/claret.conf',
+  'foreground              ' .. palette.text,
+  'kitty foreground'
+)
 assert_contains('ports/kitty/claret.conf', 'color1 ' .. palette.terra_1, 'kitty ansi red')
 
-assert_contains('ports/starship/claret.toml', 'red     = "' .. palette.terra_1 .. '"', 'starship red')
-assert_contains('ports/starship/claret.toml', 'yellow  = "' .. palette.gold_1 .. '"', 'starship yellow')
-assert_contains('ports/starship/claret.toml', 'overlay = "' .. palette.bg .. '"', 'starship overlay')
+assert_contains(
+  'ports/starship/claret.toml',
+  'red     = "' .. palette.terra_1 .. '"',
+  'starship red'
+)
+assert_contains(
+  'ports/starship/claret.toml',
+  'yellow  = "' .. palette.gold_1 .. '"',
+  'starship yellow'
+)
+assert_contains(
+  'ports/starship/claret.toml',
+  'overlay = "' .. palette.bg .. '"',
+  'starship overlay'
+)
 
 print('ports ok')
