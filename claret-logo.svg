@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="400" height="400">
+  <defs>
+    <clipPath id="glass-bowl">
+      <path d="M 65 50 C 65 100, 80 110, 100 110 C 120 110, 135 100, 135 50 Z" />
+    </clipPath>
+    <path id="leaf" d="M 0 0 C -4 -4, -4 -12, 0 -16 C 4 -12, 4 -4, 0 0 Z" fill="#8FA86E" />
+  </defs>
+
+  <!-- Background -->
+  <circle cx="100" cy="100" r="95" fill="#180810" />
+
+  <!-- Laurel Wreath (sage_1: #8FA86E) -->
+  <g id="laurel-branches">
+    <path d="M 100 175 C 75 175, 50 150, 45 110" fill="none" stroke="#8FA86E" stroke-width="3" stroke-linecap="round" />
+    <path d="M 100 175 C 125 175, 150 150, 155 110" fill="none" stroke="#8FA86E" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Left Leaves -->
+  <use href="#leaf" x="75" y="166" transform="rotate(-90 75 166)" />
+  <use href="#leaf" x="75" y="166" transform="rotate(-30 75 166)" />
+  <use href="#leaf" x="60" y="152" transform="rotate(-75 60 152)" />
+  <use href="#leaf" x="60" y="152" transform="rotate(-15 60 152)" />
+  <use href="#leaf" x="50" y="132" transform="rotate(-60 50 132)" />
+  <use href="#leaf" x="50" y="132" transform="rotate(0 50 132)" />
+  <use href="#leaf" x="45" y="110" transform="rotate(-20 45 110)" />
+
+  <!-- Right Leaves -->
+  <use href="#leaf" x="125" y="166" transform="rotate(90 125 166)" />
+  <use href="#leaf" x="125" y="166" transform="rotate(30 125 166)" />
+  <use href="#leaf" x="140" y="152" transform="rotate(75 140 152)" />
+  <use href="#leaf" x="140" y="152" transform="rotate(15 140 152)" />
+  <use href="#leaf" x="150" y="132" transform="rotate(60 150 132)" />
+  <use href="#leaf" x="150" y="132" transform="rotate(0 150 132)" />
+  <use href="#leaf" x="155" y="110" transform="rotate(20 155 110)" />
+
+  <!-- Glass Fill (empty part) (bg_mute: #2B1F22) -->
+  <path d="M 65 50 C 65 100, 80 110, 100 110 C 120 110, 135 100, 135 50 Z" fill="#2B1F22" />
+
+  <!-- Wine Fill (rose_3: #9A3D5A, rose_1: #C75B7A) -->
+  <g clip-path="url(#glass-bowl)">
+    <rect x="50" y="65" width="100" height="50" fill="#9A3D5A" />
+    <ellipse cx="100" cy="65" rx="32" ry="4" fill="#C75B7A" />
+  </g>
+
+  <!-- Glass Outline (slate_1: #8995A8) -->
+  <path d="M 65 50 C 65 100, 80 110, 100 110 C 120 110, 135 100, 135 50 Z" fill="none" stroke="#8995A8" stroke-width="3" />
+  
+  <!-- Stem (slate_1: #8995A8) -->
+  <line x1="100" y1="110" x2="100" y2="155" stroke="#8995A8" stroke-width="3" />
+  
+  <!-- Glass Base (slate_1: #8995A8) -->
+  <path d="M 100 155 C 80 155, 70 160, 70 160 L 130 160 C 130 160, 120 155, 100 155 Z" fill="#8995A8" />
+
+  <!-- Golden Lip (gold_1: #D4A76A) -->
+  <ellipse cx="100" cy="50" rx="35" ry="5" fill="none" stroke="#D4A76A" stroke-width="4" />
+
+  <!-- Glare (text: #DDD3C7) -->
+  <path d="M 73 65 C 73 85, 78 98, 85 105" fill="none" stroke="#DDD3C7" stroke-width="2" stroke-linecap="round" opacity="0.4" />
+</svg>

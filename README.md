@@ -1,4 +1,4 @@
-# claret.nvim
+# <img src="./claret-logo.svg" height="40" align="top" alt="logo" /> claret.nvim
 
 Warm Neovim colorscheme with burgundy, gold, and sage — inspired by French cuisine. 🍷
 
