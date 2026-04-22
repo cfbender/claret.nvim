@@ -6,7 +6,7 @@ claret.load()
 
 local cases = {
   { 'BlinkCmpMenu', '#211618', 'bg' },
-  { 'NoiceCmdlinePopupBorder', '#9A3D5A' },
+    { 'NoiceCmdlinePopupBorder', '#8995A8' },
   { 'WhichKey', '#C75B7A' },
   { 'FlashLabel', '#180810' },
   { 'GitSignsAdd', '#8FA86E' },
