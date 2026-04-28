@@ -5,8 +5,8 @@ local config = require('claret.config')
 
 helpers.assert_eq(palette.dark.bg, '#180810', 'dark bg')
 helpers.assert_eq(palette.dark.slate_1, '#8995A8', 'dark slate accent')
-helpers.assert_eq(palette.light.bg, '#FDF8F3', 'light bg')
-helpers.assert_eq(palette.light.gold_1, '#7D5B38', 'light walnut gold')
+helpers.assert_eq(palette.light.bg, '#F4EBDF', 'light bg')
+helpers.assert_eq(palette.light.gold_1, '#96600A', 'light walnut gold')
 
 local defaults = config.defaults()
 helpers.assert_eq(defaults.variant, 'auto', 'default variant')

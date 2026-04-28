@@ -15,7 +15,7 @@ function M.get(colors, config)
     Conditional = { fg = colors.rose_1 },
     Repeat = { fg = colors.rose_1 },
     Label = { fg = colors.rose_1 },
-    Operator = { fg = colors.text_3 },
+    Operator = { fg = colors.text_2 },
     Keyword = { fg = colors.rose_1, italic = config.italics.keywords },
     Exception = { fg = colors.rose_1, italic = config.italics.keywords },
     PreProc = { fg = colors.gold_1 },
