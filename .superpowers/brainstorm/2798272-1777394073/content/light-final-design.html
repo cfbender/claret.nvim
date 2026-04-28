@@ -1,0 +1,83 @@
+<h2>Final Design: Rose Cream + Hot Colors</h2>
+<p class="subtitle">Full palette for approval before implementing</p>
+
+<style>
+  .code-block { padding: 20px; border-radius: 10px; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 13px; line-height: 1.8; }
+</style>
+
+<h3>Backgrounds</h3>
+<div style="display: flex; gap: 12px; margin: 1rem 0;">
+  <div style="text-align: center;">
+    <div style="width: 120px; height: 50px; background: #F5E6E2; border-radius: 8px; border: 1px solid #999;"></div>
+    <code style="font-size: 11px;">bg #F5E6E2</code>
+  </div>
+  <div style="text-align: center;">
+    <div style="width: 120px; height: 50px; background: #EBDAD6; border-radius: 8px; border: 1px solid #999;"></div>
+    <code style="font-size: 11px;">bg_soft #EBDAD6</code>
+  </div>
+  <div style="text-align: center;">
+    <div style="width: 120px; height: 50px; background: #DDD0CC; border-radius: 8px; border: 1px solid #999;"></div>
+    <code style="font-size: 11px;">bg_mute #DDD0CC</code>
+  </div>
+  <div style="text-align: center;">
+    <div style="width: 120px; height: 50px; background: #CCC0B8; border-radius: 8px; border: 1px solid #999;"></div>
+    <code style="font-size: 11px;">divider #CCC0B8</code>
+  </div>
+</div>
+
+<h3>Code Sample</h3>
+<div class="code-block" style="background: #F5E6E2;">
+  <div><span style="color: #B80842;">function</span> <span style="color: #C44800;">calculateTotal</span><span style="color: #3D3028;">(</span><span style="color: #2A1F1A;">items</span><span style="color: #0E3088;">: Item[]</span><span style="color: #3D3028;">)</span><span style="color: #0E3088;">: number</span> <span style="color: #3D3028;">{</span></div>
+  <div>&nbsp;&nbsp;<span style="color: #B80842;">let</span> <span style="color: #2A1F1A;">total</span> <span style="color: #3D3028;">=</span> <span style="color: #8B3800;">0</span></div>
+  <div>&nbsp;&nbsp;<span style="color: #B80842;">for</span> <span style="color: #3D3028;">(</span><span style="color: #B80842;">const</span> <span style="color: #2A1F1A;">item</span> <span style="color: #920820;">of</span> <span style="color: #2A1F1A;">items</span><span style="color: #3D3028;">)</span> <span style="color: #3D3028;">{</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #B80842;">if</span> <span style="color: #3D3028;">(</span><span style="color: #2A1F1A;">item</span><span style="color: #3D3028;">.</span><span style="color: #D06000;">price</span> <span style="color: #3D3028;">></span> <span style="color: #8B3800;">0</span><span style="color: #3D3028;">)</span> <span style="color: #3D3028;">{</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #2A1F1A;">total</span> <span style="color: #3D3028;">+=</span> <span style="color: #2A1F1A;">item</span><span style="color: #3D3028;">.</span><span style="color: #D06000;">price</span> <span style="color: #3D3028;">*</span> <span style="color: #2A1F1A;">item</span><span style="color: #3D3028;">.</span><span style="color: #D06000;">quantity</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #3D3028;">}</span></div>
+  <div>&nbsp;&nbsp;<span style="color: #3D3028;">}</span></div>
+  <div>&nbsp;&nbsp;<span style="color: #B80842;">return</span> <span style="color: #2A1F1A;">total</span></div>
+  <div><span style="color: #3D3028;">}</span></div>
+  <div style="margin-top: 10px;"><span style="color: #B80842;">const</span> <span style="color: #8B3800;">TAX_RATE</span> <span style="color: #3D3028;">=</span> <span style="color: #8B3800;">0.08</span></div>
+  <div><span style="color: #B80842;">const</span> <span style="color: #2A1F1A;">msg</span><span style="color: #0E3088;">: string</span> <span style="color: #3D3028;">=</span> <span style="color: #1B5500;">"Total calculated successfully"</span></div>
+  <div><span style="color: #5A5048;">// TODO: add discount logic</span></div>
+  <div style="margin-top: 10px;"><span style="color: #B80842;">class</span> <span style="color: #0E3088;">ShoppingCart</span> <span style="color: #B80842;">extends</span> <span style="color: #0E3088;">BaseCart</span> <span style="color: #3D3028;">{</span></div>
+  <div>&nbsp;&nbsp;<span style="color: #C44800;">getItems</span><span style="color: #3D3028;">()</span><span style="color: #0E3088;">: Item[]</span> <span style="color: #3D3028;">{</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #B80842;">return</span> <span style="color: #B80842;">this</span><span style="color: #3D3028;">.</span><span style="color: #D06000;">items</span><span style="color: #3D3028;">.</span><span style="color: #C44800;">filter</span><span style="color: #3D3028;">(</span><span style="color: #2A1F1A;">i</span> <span style="color: #3D3028;">=></span> <span style="color: #2A1F1A;">i</span><span style="color: #3D3028;">.</span><span style="color: #D06000;">active</span><span style="color: #3D3028;">)</span></div>
+  <div>&nbsp;&nbsp;<span style="color: #3D3028;">}</span></div>
+  <div><span style="color: #3D3028;">}</span></div>
+</div>
+
+<h3 style="margin-top: 1.5rem;">With Selection Highlight + Error</h3>
+<div class="code-block" style="background: #F5E6E2;">
+  <div style="background: #EBDAD6; margin: -4px -8px; padding: 4px 8px; border-radius: 4px;"><span style="color: #2A1F1A;">  selected line (bg_soft)</span></div>
+  <div style="background: #DDD0CC; margin: -4px -8px; padding: 4px 8px; border-radius: 4px; margin-top: 8px;"><span style="color: #2A1F1A;">  cursor line (bg_mute)</span></div>
+  <div style="margin-top: 8px;"><span style="color: #D42010;">✗ Error: type mismatch (terra_1)</span></div>
+  <div><span style="color: #B81810;">⚠ Warning: unused variable (terra_2)</span></div>
+</div>
+
+<!-- Full hex table -->
+<div style="margin-top: 1.5rem; padding: 20px; background: #1a1a1a; border-radius: 12px; color: #e0e0e0; font-size: 12px;">
+  <h3 style="color: #fff; margin-bottom: 12px;">Complete Palette — Current → Proposed</h3>
+  <table style="width: 100%; border-collapse: collapse;">
+    <tr style="border-bottom: 1px solid #444;"><td style="padding: 5px;"><strong>Key</strong></td><td style="padding: 5px;"><strong>Current</strong></td><td style="padding: 5px;"><strong>Proposed</strong></td><td style="padding: 5px;"><strong>Changed?</strong></td></tr>
+    <tr><td style="padding: 4px 5px;">bg</td><td style="padding: 4px 5px;">#F4EBDF</td><td style="padding: 4px 5px;"><span style="color:#F5E6E2;">■</span> #F5E6E2</td><td style="padding: 4px 5px;">✓</td></tr>
+    <tr><td style="padding: 4px 5px;">bg_soft</td><td style="padding: 4px 5px;">#E9DECE</td><td style="padding: 4px 5px;"><span style="color:#EBDAD6;">■</span> #EBDAD6</td><td style="padding: 4px 5px;">✓</td></tr>
+    <tr><td style="padding: 4px 5px;">bg_mute</td><td style="padding: 4px 5px;">#DAD0C0</td><td style="padding: 4px 5px;"><span style="color:#DDD0CC;">■</span> #DDD0CC</td><td style="padding: 4px 5px;">✓</td></tr>
+    <tr><td style="padding: 4px 5px;">divider</td><td style="padding: 4px 5px;">#C8BDA8</td><td style="padding: 4px 5px;"><span style="color:#CCC0B8;">■</span> #CCC0B8</td><td style="padding: 4px 5px;">✓</td></tr>
+    <tr><td style="padding: 4px 5px;">text</td><td style="padding: 4px 5px;">#2A1F1A</td><td style="padding: 4px 5px;">#2A1F1A</td><td style="padding: 4px 5px;">—</td></tr>
+    <tr><td style="padding: 4px 5px;">text_2</td><td style="padding: 4px 5px;">#4D4035</td><td style="padding: 4px 5px;"><span style="color:#3D3028;">■</span> #3D3028</td><td style="padding: 4px 5px;">✓</td></tr>
+    <tr><td style="padding: 4px 5px;">text_3</td><td style="padding: 4px 5px;">#6B5F55</td><td style="padding: 4px 5px;"><span style="color:#5A5048;">■</span> #5A5048</td><td style="padding: 4px 5px;">✓</td></tr>
+    <tr><td style="padding: 4px 5px;">text_4</td><td style="padding: 4px 5px;">#928578</td><td style="padding: 4px 5px;">#928578</td><td style="padding: 4px 5px;">—</td></tr>
+    <tr style="border-top: 1px solid #333;"><td style="padding: 4px 5px;">rose_1</td><td style="padding: 4px 5px;">#8B2252</td><td style="padding: 4px 5px;"><span style="color:#B80842;">■</span> #B80842</td><td style="padding: 4px 5px;">✓</td></tr>
+    <tr><td style="padding: 4px 5px;">rose_2</td><td style="padding: 4px 5px;">#722F37</td><td style="padding: 4px 5px;"><span style="color:#920820;">■</span> #920820</td><td style="padding: 4px 5px;">✓</td></tr>
+    <tr><td style="padding: 4px 5px;">rose_3</td><td style="padding: 4px 5px;">#5C1A2A</td><td style="padding: 4px 5px;"><span style="color:#7A0020;">■</span> #7A0020</td><td style="padding: 4px 5px;">✓</td></tr>
+    <tr><td style="padding: 4px 5px;">gold_1</td><td style="padding: 4px 5px;">#96600A</td><td style="padding: 4px 5px;"><span style="color:#C44800;">■</span> #C44800</td><td style="padding: 4px 5px;">✓</td></tr>
+    <tr><td style="padding: 4px 5px;">gold_2</td><td style="padding: 4px 5px;">#A87010</td><td style="padding: 4px 5px;"><span style="color:#D06000;">■</span> #D06000</td><td style="padding: 4px 5px;">✓</td></tr>
+    <tr><td style="padding: 4px 5px;">gold_3</td><td style="padding: 4px 5px;">#5F4429</td><td style="padding: 4px 5px;"><span style="color:#8B3800;">■</span> #8B3800</td><td style="padding: 4px 5px;">✓</td></tr>
+    <tr><td style="padding: 4px 5px;">sage_1</td><td style="padding: 4px 5px;">#456B28</td><td style="padding: 4px 5px;"><span style="color:#1B5500;">■</span> #1B5500</td><td style="padding: 4px 5px;">✓</td></tr>
+    <tr><td style="padding: 4px 5px;">sage_2</td><td style="padding: 4px 5px;">#3A5A20</td><td style="padding: 4px 5px;"><span style="color:#124800;">■</span> #124800</td><td style="padding: 4px 5px;">✓</td></tr>
+    <tr><td style="padding: 4px 5px;">slate_1</td><td style="padding: 4px 5px;">#3A4E6E</td><td style="padding: 4px 5px;"><span style="color:#0E3088;">■</span> #0E3088</td><td style="padding: 4px 5px;">✓</td></tr>
+    <tr><td style="padding: 4px 5px;">slate_2</td><td style="padding: 4px 5px;">#2E3E5A</td><td style="padding: 4px 5px;"><span style="color:#0A2575;">■</span> #0A2575</td><td style="padding: 4px 5px;">✓</td></tr>
+    <tr><td style="padding: 4px 5px;">terra_1</td><td style="padding: 4px 5px;">#A03025</td><td style="padding: 4px 5px;"><span style="color:#D42010;">■</span> #D42010</td><td style="padding: 4px 5px;">✓</td></tr>
+    <tr><td style="padding: 4px 5px;">terra_2</td><td style="padding: 4px 5px;">#8A2820</td><td style="padding: 4px 5px;"><span style="color:#B81810;">■</span> #B81810</td><td style="padding: 4px 5px;">✓</td></tr>
+  </table>
+</div>

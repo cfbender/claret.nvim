@@ -1,0 +1,64 @@
+<h2>Light Palette: Current vs Bolder</h2>
+<p class="subtitle">More saturation + contrast across all syntax colors</p>
+
+<div style="display: flex; gap: 24px; margin: 2rem 0;">
+  <!-- CURRENT -->
+  <div style="flex: 1;">
+    <h3 style="text-align: center; margin-bottom: 12px;">Current</h3>
+    <div style="background: #F4EBDF; padding: 20px; border-radius: 12px; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 13px; line-height: 1.8;">
+      <div><span style="color: #8B2252;">function</span> <span style="color: #96600A;">calculateTotal</span><span style="color: #4D4035;">(</span><span style="color: #2A1F1A;">items</span><span style="color: #3A4E6E;">: Item[]</span><span style="color: #4D4035;">)</span><span style="color: #3A4E6E;">: number</span> <span style="color: #4D4035;">{</span></div>
+      <div>&nbsp;&nbsp;<span style="color: #8B2252;">let</span> <span style="color: #2A1F1A;">total</span> <span style="color: #4D4035;">=</span> <span style="color: #5F4429;">0</span></div>
+      <div>&nbsp;&nbsp;<span style="color: #8B2252;">for</span> <span style="color: #4D4035;">(</span><span style="color: #8B2252;">const</span> <span style="color: #2A1F1A;">item</span> <span style="color: #722F37;">of</span> <span style="color: #2A1F1A;">items</span><span style="color: #4D4035;">)</span> <span style="color: #4D4035;">{</span></div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #2A1F1A;">total</span> <span style="color: #4D4035;">+=</span> <span style="color: #2A1F1A;">item</span><span style="color: #4D4035;">.</span><span style="color: #A87010;">price</span> <span style="color: #4D4035;">*</span> <span style="color: #2A1F1A;">item</span><span style="color: #4D4035;">.</span><span style="color: #A87010;">quantity</span></div>
+      <div>&nbsp;&nbsp;<span style="color: #4D4035;">}</span></div>
+      <div>&nbsp;&nbsp;<span style="color: #8B2252;">return</span> <span style="color: #2A1F1A;">total</span></div>
+      <div><span style="color: #4D4035;">}</span></div>
+      <div style="margin-top: 8px;"><span style="color: #8B2252;">const</span> <span style="color: #5F4429;">TAX_RATE</span> <span style="color: #4D4035;">=</span> <span style="color: #5F4429;">0.08</span></div>
+      <div><span style="color: #8B2252;">const</span> <span style="color: #2A1F1A;">msg</span> <span style="color: #4D4035;">=</span> <span style="color: #456B28;">"Total calculated"</span></div>
+      <div><span style="color: #6B5F55;">// TODO: add discount logic</span></div>
+    </div>
+    <div style="margin-top: 16px; font-size: 12px; line-height: 2; background: #F4EBDF; padding: 12px; border-radius: 8px;">
+      <div><span style="color: #8B2252;">■</span> rose_1 #8B2252</div>
+      <div><span style="color: #96600A;">■</span> gold_1 #96600A</div>
+      <div><span style="color: #456B28;">■</span> sage_1 #456B28</div>
+      <div><span style="color: #3A4E6E;">■</span> slate_1 #3A4E6E</div>
+      <div><span style="color: #A03025;">■</span> terra_1 #A03025</div>
+    </div>
+  </div>
+
+  <!-- BOLDER -->
+  <div style="flex: 1;">
+    <h3 style="text-align: center; margin-bottom: 12px;">Bolder</h3>
+    <div style="background: #F4EBDF; padding: 20px; border-radius: 12px; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 13px; line-height: 1.8;">
+      <div><span style="color: #9B1B50;">function</span> <span style="color: #A85500;">calculateTotal</span><span style="color: #4D4035;">(</span><span style="color: #2A1F1A;">items</span><span style="color: #2B4580;">: Item[]</span><span style="color: #4D4035;">)</span><span style="color: #2B4580;">: number</span> <span style="color: #4D4035;">{</span></div>
+      <div>&nbsp;&nbsp;<span style="color: #9B1B50;">let</span> <span style="color: #2A1F1A;">total</span> <span style="color: #4D4035;">=</span> <span style="color: #6B4000;">0</span></div>
+      <div>&nbsp;&nbsp;<span style="color: #9B1B50;">for</span> <span style="color: #4D4035;">(</span><span style="color: #9B1B50;">const</span> <span style="color: #2A1F1A;">item</span> <span style="color: #7A1830;">of</span> <span style="color: #2A1F1A;">items</span><span style="color: #4D4035;">)</span> <span style="color: #4D4035;">{</span></div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #2A1F1A;">total</span> <span style="color: #4D4035;">+=</span> <span style="color: #2A1F1A;">item</span><span style="color: #4D4035;">.</span><span style="color: #B86800;">price</span> <span style="color: #4D4035;">*</span> <span style="color: #2A1F1A;">item</span><span style="color: #4D4035;">.</span><span style="color: #B86800;">quantity</span></div>
+      <div>&nbsp;&nbsp;<span style="color: #4D4035;">}</span></div>
+      <div>&nbsp;&nbsp;<span style="color: #9B1B50;">return</span> <span style="color: #2A1F1A;">total</span></div>
+      <div><span style="color: #4D4035;">}</span></div>
+      <div style="margin-top: 8px;"><span style="color: #9B1B50;">const</span> <span style="color: #6B4000;">TAX_RATE</span> <span style="color: #4D4035;">=</span> <span style="color: #6B4000;">0.08</span></div>
+      <div><span style="color: #9B1B50;">const</span> <span style="color: #2A1F1A;">msg</span> <span style="color: #4D4035;">=</span> <span style="color: #336618;">"Total calculated"</span></div>
+      <div><span style="color: #5A5048;">// TODO: add discount logic</span></div>
+    </div>
+    <div style="margin-top: 16px; font-size: 12px; line-height: 2; background: #F4EBDF; padding: 12px; border-radius: 8px;">
+      <div><span style="color: #9B1B50;">■</span> rose_1 #9B1B50 <span style="color: #928578; font-size: 10px;">(was #8B2252)</span></div>
+      <div><span style="color: #A85500;">■</span> gold_1 #A85500 <span style="color: #928578; font-size: 10px;">(was #96600A)</span></div>
+      <div><span style="color: #336618;">■</span> sage_1 #336618 <span style="color: #928578; font-size: 10px;">(was #456B28)</span></div>
+      <div><span style="color: #2B4580;">■</span> slate_1 #2B4580 <span style="color: #928578; font-size: 10px;">(was #3A4E6E)</span></div>
+      <div><span style="color: #B82820;">■</span> terra_1 #B82820 <span style="color: #928578; font-size: 10px;">(was #A03025)</span></div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top: 1rem; padding: 16px; background: rgba(0,0,0,0.05); border-radius: 8px;">
+  <h3>What changed in "Bolder"</h3>
+  <ul style="font-size: 13px; line-height: 1.8;">
+    <li><strong>Rose:</strong> More saturated magenta push — #8B2252 → #9B1B50</li>
+    <li><strong>Gold:</strong> Purer orange-amber, less brown — #96600A → #A85500</li>
+    <li><strong>Sage:</strong> Deeper, richer green — #456B28 → #336618</li>
+    <li><strong>Slate:</strong> Stronger blue — #3A4E6E → #2B4580</li>
+    <li><strong>Terra:</strong> More vivid red — #A03025 → #B82820</li>
+    <li><strong>Gold_3 (constants):</strong> Richer — #5F4429 → #6B4000</li>
+  </ul>
+</div>

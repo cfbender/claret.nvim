@@ -1,0 +1,121 @@
+<h2>Final Palette Proposal — C: Warm & Rich + Dimmer BG</h2>
+<p class="subtitle">Full palette with adjusted backgrounds, text tiers, and boosted accent colors</p>
+
+<div class="mockup">
+  <div class="mockup-header">Proposed Light Mode</div>
+  <div class="mockup-body" style="background: #F4EBDF; padding: 24px; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; line-height: 1.8;">
+    <div style="color: #6B5F55;">-- authenticate user against database</div>
+    <div><span style="color: #8B2252; font-weight: bold;">local</span> <span style="color: #96600A;">authenticate</span> = <span style="color: #8B2252; font-weight: bold;">function</span>(<span style="color: #2A1F1A;">user</span>, <span style="color: #2A1F1A;">password</span>)</div>
+    <div style="padding-left: 20px;"><span style="color: #8B2252; font-weight: bold;">local</span> <span style="color: #3A4E6E;">UserRecord</span> = <span style="color: #8B2252; font-weight: bold;">require</span>(<span style="color: #456B28;">"models.user"</span>)</div>
+    <div style="padding-left: 20px;"><span style="color: #8B2252; font-weight: bold;">local</span> <span style="color: #2A1F1A;">result</span> = <span style="color: #96600A;">db_query</span>(<span style="color: #456B28;">"SELECT * FROM users"</span>)</div>
+    <div style="padding-left: 20px;"><span style="color: #8B2252; font-weight: bold;">if</span> <span style="color: #2A1F1A;">result</span> <span style="color: #6B5F55;">==</span> <span style="color: #8B2252; font-weight: bold;">nil</span> <span style="color: #8B2252; font-weight: bold;">then</span></div>
+    <div style="padding-left: 40px;"><span style="color: #A03025;">error</span>(<span style="color: #456B28;">"Database connection failed"</span>)</div>
+    <div style="padding-left: 20px;"><span style="color: #8B2252; font-weight: bold;">end</span></div>
+    <div style="padding-left: 20px;"><span style="color: #8B2252; font-weight: bold;">return</span> <span style="color: #96600A;">validate</span>(<span style="color: #2A1F1A;">result</span>, <span style="color: #A87010;">42</span>)</div>
+    <div><span style="color: #8B2252; font-weight: bold;">end</span></div>
+  </div>
+</div>
+
+<div style="margin-top: 24px;">
+  <h3>Background Layers</h3>
+  <div style="display: flex; gap: 0; margin-top: 12px; border-radius: 8px; overflow: hidden;">
+    <div style="flex:1; padding: 20px; background: #F4EBDF; text-align: center;">
+      <div style="font-size: 12px; color: #2A1F1A; font-weight: bold;">bg</div>
+      <div style="font-size: 11px; color: #5A4D42;">#F4EBDF</div>
+    </div>
+    <div style="flex:1; padding: 20px; background: #E9DECE; text-align: center;">
+      <div style="font-size: 12px; color: #2A1F1A; font-weight: bold;">bg_soft</div>
+      <div style="font-size: 11px; color: #5A4D42;">#E9DECE</div>
+    </div>
+    <div style="flex:1; padding: 20px; background: #DAD0C0; text-align: center;">
+      <div style="font-size: 12px; color: #2A1F1A; font-weight: bold;">bg_mute</div>
+      <div style="font-size: 11px; color: #5A4D42;">#DAD0C0</div>
+    </div>
+    <div style="flex:1; padding: 20px; background: #C8BDA8; text-align: center;">
+      <div style="font-size: 12px; color: #2A1F1A; font-weight: bold;">divider</div>
+      <div style="font-size: 11px; color: #2A1F1A;">#C8BDA8</div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top: 24px;">
+  <h3>Text Tiers</h3>
+  <div style="background: #F4EBDF; padding: 20px; border-radius: 8px; margin-top: 12px;">
+    <div style="margin-bottom: 8px;"><span style="color: #2A1F1A; font-size: 14px; font-weight: bold;">text — #2A1F1A</span> <span style="color: #6B5F55; font-size: 12px;">(unchanged)</span></div>
+    <div style="margin-bottom: 8px;"><span style="color: #4D4035; font-size: 14px;">text_2 — #4D4035</span> <span style="color: #6B5F55; font-size: 12px;">(was #5A4D42, darker)</span></div>
+    <div style="margin-bottom: 8px;"><span style="color: #6B5F55; font-size: 14px;">text_3 — #6B5F55</span> <span style="color: #6B5F55; font-size: 12px;">(was #7D7068, operators/comments)</span></div>
+    <div><span style="color: #928578; font-size: 14px;">text_4 — #928578</span> <span style="color: #6B5F55; font-size: 12px;">(was #A09489, dimmed)</span></div>
+  </div>
+</div>
+
+<div style="margin-top: 24px;">
+  <h3>Accent Colors — Current → Proposed</h3>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px;">
+    <div style="background: #F4EBDF; padding: 16px; border-radius: 8px;">
+      <div style="font-size: 12px; color: #6B5F55; margin-bottom: 8px;">GOLD (functions)</div>
+      <div style="display:flex; gap: 12px; align-items: center;">
+        <span style="color: #7D5B38; font-size: 16px;">■ #7D5B38</span>
+        <span style="color: #6B5F55;">→</span>
+        <span style="color: #96600A; font-size: 16px; font-weight: bold;">■ #96600A</span>
+      </div>
+      <div style="display:flex; gap: 12px; align-items: center; margin-top: 4px;">
+        <span style="color: #9A7245; font-size: 16px;">■ #9A7245</span>
+        <span style="color: #6B5F55;">→</span>
+        <span style="color: #A87010; font-size: 16px; font-weight: bold;">■ #A87010</span>
+      </div>
+    </div>
+    <div style="background: #F4EBDF; padding: 16px; border-radius: 8px;">
+      <div style="font-size: 12px; color: #6B5F55; margin-bottom: 8px;">SAGE (strings)</div>
+      <div style="display:flex; gap: 12px; align-items: center;">
+        <span style="color: #5A6B40; font-size: 16px;">■ #5A6B40</span>
+        <span style="color: #6B5F55;">→</span>
+        <span style="color: #456B28; font-size: 16px; font-weight: bold;">■ #456B28</span>
+      </div>
+      <div style="display:flex; gap: 12px; align-items: center; margin-top: 4px;">
+        <span style="color: #4A5934; font-size: 16px;">■ #4A5934</span>
+        <span style="color: #6B5F55;">→</span>
+        <span style="color: #3A5A20; font-size: 16px; font-weight: bold;">■ #3A5A20</span>
+      </div>
+    </div>
+    <div style="background: #F4EBDF; padding: 16px; border-radius: 8px;">
+      <div style="font-size: 12px; color: #6B5F55; margin-bottom: 8px;">SLATE (types)</div>
+      <div style="display:flex; gap: 12px; align-items: center;">
+        <span style="color: #4A5670; font-size: 16px;">■ #4A5670</span>
+        <span style="color: #6B5F55;">→</span>
+        <span style="color: #3A4E6E; font-size: 16px; font-weight: bold;">■ #3A4E6E</span>
+      </div>
+      <div style="display:flex; gap: 12px; align-items: center; margin-top: 4px;">
+        <span style="color: #3A4558; font-size: 16px;">■ #3A4558</span>
+        <span style="color: #6B5F55;">→</span>
+        <span style="color: #2E3E5A; font-size: 16px; font-weight: bold;">■ #2E3E5A</span>
+      </div>
+    </div>
+    <div style="background: #F4EBDF; padding: 16px; border-radius: 8px;">
+      <div style="font-size: 12px; color: #6B5F55; margin-bottom: 8px;">ROSE + TERRA (unchanged)</div>
+      <div style="display:flex; gap: 8px; flex-wrap: wrap;">
+        <span style="color: #8B2252; font-size: 16px;">■ rose</span>
+        <span style="color: #A03025; font-size: 16px;">■ terra</span>
+        <span style="color: #6B5F55; font-size: 12px;">keeping as-is</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top: 32px;">
+  <div class="options">
+    <div class="option" data-choice="approve" onclick="toggleSelect(this)">
+      <div class="letter">A</div>
+      <div class="content">
+        <h3>Looks good — proceed</h3>
+        <p>Lock these values and update palette.lua</p>
+      </div>
+    </div>
+    <div class="option" data-choice="tweak" onclick="toggleSelect(this)">
+      <div class="letter">B</div>
+      <div class="content">
+        <h3>Needs tweaking</h3>
+        <p>Some colors need adjustment — I'll tell you which</p>
+      </div>
+    </div>
+  </div>
+</div>

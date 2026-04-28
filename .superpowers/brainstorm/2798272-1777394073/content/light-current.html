@@ -1,0 +1,70 @@
+<h2>Current Light Palette</h2>
+<p class="subtitle">Let's see what we're working with before pushing contrast/saturation</p>
+
+<div style="margin: 2rem 0;">
+  <h3>Backgrounds</h3>
+  <div style="display: flex; gap: 12px; flex-wrap: wrap; margin: 1rem 0;">
+    <div style="width: 120px; text-align: center;">
+      <div style="background: #F4EBDF; border: 1px solid #C8BDA8; border-radius: 8px; height: 60px;"></div>
+      <code style="font-size: 11px;">bg #F4EBDF</code>
+    </div>
+    <div style="width: 120px; text-align: center;">
+      <div style="background: #E9DECE; border: 1px solid #C8BDA8; border-radius: 8px; height: 60px;"></div>
+      <code style="font-size: 11px;">bg_soft #E9DECE</code>
+    </div>
+    <div style="width: 120px; text-align: center;">
+      <div style="background: #DAD0C0; border: 1px solid #C8BDA8; border-radius: 8px; height: 60px;"></div>
+      <code style="font-size: 11px;">bg_mute #DAD0C0</code>
+    </div>
+    <div style="width: 120px; text-align: center;">
+      <div style="background: #C8BDA8; border-radius: 8px; height: 60px;"></div>
+      <code style="font-size: 11px;">divider #C8BDA8</code>
+    </div>
+  </div>
+
+  <h3>Text Colors</h3>
+  <div style="display: flex; gap: 12px; flex-wrap: wrap; margin: 1rem 0;">
+    <div style="width: 200px; padding: 12px; background: #F4EBDF; border-radius: 8px;">
+      <span style="color: #2A1F1A; font-size: 16px; font-weight: 600;">text #2A1F1A</span>
+    </div>
+    <div style="width: 200px; padding: 12px; background: #F4EBDF; border-radius: 8px;">
+      <span style="color: #4D4035; font-size: 16px;">text_2 #4D4035</span>
+    </div>
+    <div style="width: 200px; padding: 12px; background: #F4EBDF; border-radius: 8px;">
+      <span style="color: #6B5F55; font-size: 16px;">text_3 #6B5F55</span>
+    </div>
+    <div style="width: 200px; padding: 12px; background: #F4EBDF; border-radius: 8px;">
+      <span style="color: #928578; font-size: 16px;">text_4 #928578</span>
+    </div>
+  </div>
+
+  <h3>Syntax Colors on Background</h3>
+  <div style="background: #F4EBDF; padding: 24px; border-radius: 12px; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 15px; line-height: 2;">
+    <div><span style="color: #8B2252; font-weight: 600;">rose_1 #8B2252</span> — keywords (if, return, function)</div>
+    <div><span style="color: #722F37;">rose_2 #722F37</span> — keyword operators (and, or, not)</div>
+    <div><span style="color: #5C1A2A;">rose_3 #5C1A2A</span> — builtins</div>
+    <div><span style="color: #96600A; font-weight: 600;">gold_1 #96600A</span> — functions</div>
+    <div><span style="color: #A87010;">gold_2 #A87010</span> — methods, properties</div>
+    <div><span style="color: #5F4429;">gold_3 #5F4429</span> — constants</div>
+    <div><span style="color: #456B28; font-weight: 600;">sage_1 #456B28</span> — strings</div>
+    <div><span style="color: #3A5A20;">sage_2 #3A5A20</span> — string escapes</div>
+    <div><span style="color: #3A4E6E; font-weight: 600;">slate_1 #3A4E6E</span> — types</div>
+    <div><span style="color: #2E3E5A;">slate_2 #2E3E5A</span> — type parameters</div>
+    <div><span style="color: #A03025; font-weight: 600;">terra_1 #A03025</span> — errors</div>
+    <div><span style="color: #8A2820;">terra_2 #8A2820</span> — warnings</div>
+  </div>
+
+  <h3>Fake Code Sample</h3>
+  <div style="background: #F4EBDF; padding: 24px; border-radius: 12px; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 14px; line-height: 1.8;">
+    <div><span style="color: #8B2252;">function</span> <span style="color: #96600A;">calculateTotal</span><span style="color: #4D4035;">(</span><span style="color: #2A1F1A;">items</span><span style="color: #3A4E6E;">: Item[]</span><span style="color: #4D4035;">)</span><span style="color: #3A4E6E;">: number</span> <span style="color: #4D4035;">{</span></div>
+    <div>&nbsp;&nbsp;<span style="color: #8B2252;">let</span> <span style="color: #2A1F1A;">total</span> <span style="color: #4D4035;">=</span> <span style="color: #5F4429;">0</span></div>
+    <div>&nbsp;&nbsp;<span style="color: #8B2252;">for</span> <span style="color: #4D4035;">(</span><span style="color: #8B2252;">const</span> <span style="color: #2A1F1A;">item</span> <span style="color: #722F37;">of</span> <span style="color: #2A1F1A;">items</span><span style="color: #4D4035;">)</span> <span style="color: #4D4035;">{</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #2A1F1A;">total</span> <span style="color: #4D4035;">+=</span> <span style="color: #2A1F1A;">item</span><span style="color: #4D4035;">.</span><span style="color: #A87010;">price</span> <span style="color: #4D4035;">*</span> <span style="color: #2A1F1A;">item</span><span style="color: #4D4035;">.</span><span style="color: #A87010;">quantity</span></div>
+    <div>&nbsp;&nbsp;<span style="color: #4D4035;">}</span></div>
+    <div>&nbsp;&nbsp;<span style="color: #8B2252;">return</span> <span style="color: #2A1F1A;">total</span></div>
+    <div><span style="color: #4D4035;">}</span></div>
+    <div style="margin-top: 12px;"><span style="color: #8B2252;">const</span> <span style="color: #5F4429;">TAX_RATE</span> <span style="color: #4D4035;">=</span> <span style="color: #5F4429;">0.08</span></div>
+    <div><span style="color: #8B2252;">const</span> <span style="color: #2A1F1A;">msg</span> <span style="color: #4D4035;">=</span> <span style="color: #456B28;">"Total calculated"</span></div>
+    <div><span style="color: #6B5F55;">// TODO: add discount logic</span></div>
+  </div>
+</div>
