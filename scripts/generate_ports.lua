@@ -238,10 +238,10 @@ generated['ports/yazi/claret-dark.yazi/flavor.toml'] = table.concat({
   '  { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "' .. p.rose_2 .. '" },',
   '  { mime = "application/json", fg = "' .. p.slate_1 .. '" },',
   '  { mime = "application/toml", fg = "' .. p.slate_1 .. '" },',
-  '  { name = "*", is = "orphan", fg = "' .. p.terra_1 .. '" },',
-  '  { name = "*", is = "exec", fg = "' .. p.sage_1 .. '" },',
-  '  { name = "*/", fg = "' .. p.gold_1 .. '" },',
-  '  { name = "*", fg = "' .. p.text .. '" }',
+  '  { url = "*", is = "orphan", fg = "' .. p.terra_1 .. '" },',
+  '  { url = "*", is = "exec", fg = "' .. p.sage_1 .. '" },',
+  '  { url = "*/", fg = "' .. p.gold_1 .. '" },',
+  '  { url = "*", fg = "' .. p.text .. '" }',
   ']',
 }, '\n')
 
